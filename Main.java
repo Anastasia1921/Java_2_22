@@ -64,6 +64,7 @@ public class Main {
                     int newD = prsNewDate.getDate();
                     Calendar newCalendar = new GregorianCalendar(1900 + newY, newM, newD);
 
+                    calendar.set(y+1900, m, d);
                     int numWorkDays2 = 0;
                     int newId = 0;
                     while (calendar.before(newCalendar)) {
